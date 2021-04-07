@@ -1,5 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from './components/Componente.js';
+import Card from './components/Card.js';
+import Propiedades from './components/Propiedades.js';
+import Estado from './components/Estado.js';
+import RenderizadoCondicional from './components/RenderizadoCondicional.js';
+import RenderizadoElementos from './components/RenderizadoElementos.js';
 
 function App() {
   return (
@@ -17,6 +23,26 @@ function App() {
         >
           Learn React
         </a>
+        <Componente msg="Hello Props"></Componente>
+        <hr/>
+        <Propiedades 
+          cadena="Un string" 
+          numero={13} 
+          booleano={true} 
+          arreglo={[1, 2, 3]} 
+          objeto={{nombre: "John Doe", mail: "doe@john.com"}}
+          elementoReact={<i>Elemento React</i>} 
+          componenteReact={
+            <Componente msg="desde otro compontente" />
+          }
+
+        />
+        <hr/>
+        <Estado></Estado>
+        <hr />
+        <RenderizadoCondicional />
+        <hr />
+        <RenderizadoElementos />
       </header>
     </div>
   );
