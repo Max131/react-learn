@@ -7,7 +7,10 @@ import Estado from './components/Estado.js';
 import RenderizadoCondicional from './components/RenderizadoCondicional.js';
 import RenderizadoElementos from './components/RenderizadoElementos.js';
 import {EventosES6, EventosES7} from './components/Eventos.js';
-import ComunicacionComponentes from './components/ComunicacionComponentes.js'
+import ComunicacionComponentes from './components/ComunicacionComponentes.js';
+import CicloVida from './components/CicloVida.js';
+import AjaxApis from './components/AjaxApis.js'
+
 function App() {
   return (
     <div className="App">
@@ -50,6 +53,10 @@ function App() {
         <EventosES7 />
         <hr />
         <ComunicacionComponentes />
+        <hr />
+        <CicloVida />
+        <hr />
+        <AjaxApis />
       </header>
     </div>
   );
