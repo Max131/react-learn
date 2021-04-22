@@ -10,6 +10,9 @@ import {EventosES6, EventosES7} from './components/Eventos.js';
 import ComunicacionComponentes from './components/ComunicacionComponentes.js';
 import CicloVida from './components/CicloVida.js';
 import AjaxApis from './components/AjaxApis.js'
+import ContadorHooks from './components/ContadorHooks.js';
+import ScrollHooks from './components/ScrollHooks.js';
+import RelojHooks from './components/RelojHooks.js'
 
 function App() {
   return (
@@ -39,10 +42,9 @@ function App() {
           componenteReact={
             <Componente msg="desde otro compontente" />
           }
-
         />
+
         <hr/>
-        <Estado></Estado>
         <hr />
         <RenderizadoCondicional />
         <hr />
@@ -56,7 +58,12 @@ function App() {
         <hr />
         <CicloVida />
         <hr />
-        <AjaxApis />
+        <hr />
+        <ContadorHooks titulo="Followers" />
+        <hr />
+        <ScrollHooks />
+        <hr />
+        <RelojHooks />
       </header>
     </div>
   );
