@@ -3,16 +3,18 @@ import './App.css';
 import Componente from './components/Componente.js';
 import Card from './components/Card.js';
 import Propiedades from './components/Propiedades.js';
-import Estado from './components/Estado.js';
+import Estado from './components/Estado.js'; //X
 import RenderizadoCondicional from './components/RenderizadoCondicional.js';
 import RenderizadoElementos from './components/RenderizadoElementos.js';
 import {EventosES6, EventosES7} from './components/Eventos.js';
 import ComunicacionComponentes from './components/ComunicacionComponentes.js';
 import CicloVida from './components/CicloVida.js';
-import AjaxApis from './components/AjaxApis.js'
+import AjaxApis from './components/AjaxApis.js'; //X
 import ContadorHooks from './components/ContadorHooks.js';
 import ScrollHooks from './components/ScrollHooks.js';
 import RelojHooks from './components/RelojHooks.js'
+import AjaxHooks from './components/AjaxHooks.js';
+
 
 function App() {
   return (
@@ -64,6 +66,8 @@ function App() {
         <ScrollHooks />
         <hr />
         <RelojHooks />
+        <hr />
+        <AjaxHooks />
       </header>
     </div>
   );
