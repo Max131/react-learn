@@ -14,7 +14,7 @@ import ContadorHooks from './components/ContadorHooks.js';
 import ScrollHooks from './components/ScrollHooks.js';
 import RelojHooks from './components/RelojHooks.js'
 import AjaxHooks from './components/AjaxHooks.js';
-
+import ComponentesEstilizados from './components/ComponentesEstilizados.jsx'
 
 function App() {
   return (
@@ -32,7 +32,9 @@ function App() {
         >
           Learn React
         </a>
-        <Componente msg="Hello Props"></Componente>
+        <Componente msg="Hello Props" />
+        <hr />
+        <Card />
         <hr/>
         <Propiedades 
           cadena="Un string" 
@@ -45,8 +47,9 @@ function App() {
             <Componente msg="desde otro compontente" />
           }
         />
-
-        <hr/>
+        <hr />
+        <Estado />
+        <hr />
         <hr />
         <RenderizadoCondicional />
         <hr />
@@ -68,6 +71,8 @@ function App() {
         <RelojHooks />
         <hr />
         <AjaxHooks />
+        <hr />
+        <ComponentesEstilizados />
       </header>
     </div>
   );
